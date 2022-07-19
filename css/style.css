@@ -412,6 +412,20 @@ a {
 #slogun .inner .wrap article:nth-child(1) h1 {
   font: 50px/1.3 "arial";
 }
+#slogun .inner .wrap article:nth-child(1) .line {
+  width: 170px;
+  height: 4px;
+  margin-top: 15px;
+  border-top: 7px solid black;
+}
+#slogun .inner .wrap article:nth-child(1)::after {
+  content: "";
+  display: block;
+  width: 85px;
+  height: 7px;
+  background: #000;
+  margin-top: 20px;
+}
 #slogun .inner .wrap article:nth-child(1) span {
   display: block;
   width: 100%;
