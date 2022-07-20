@@ -259,6 +259,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 0% 40%;
 }
 #product .inner .wrap article img {
   width: 100%;
@@ -445,6 +446,75 @@ a {
 }
 #slogun .inner .wrap article:nth-child(2) p {
   font: normal 15px/1.5 "arial";
+}
+
+#submsg {
+  width: 100%;
+  background: #efefef;
+}
+#submsg .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#submsg .inner .wrap {
+  width: 100%;
+  padding-left: 20px;
+}
+#submsg .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#submsg .inner .wrap article {
+  width: 380px;
+  float: left;
+  background: #efefef;
+  position: relative;
+}
+#submsg .inner .wrap article h1 {
+  font: bold 40px/1.2 black "arial";
+  width: 180px;
+  height: 140px;
+  position: absolute;
+  padding: 35px;
+  padding-left: 10%;
+  left: 26%;
+  top: 58%;
+  text-align: left;
+  background: gainsboro;
+}
+#submsg .inner .wrap article h1:before {
+  content: "";
+  display: block;
+  background: black;
+  width: 30%;
+  height: 3px;
+  margin-bottom: 10px;
+}
+#submsg .inner .wrap article h1::after {
+  content: "";
+  display: block;
+  background: black;
+  width: 30%;
+  height: 3px;
+  margin-top: 10px;
+}
+#submsg .inner .wrap article p {
+  font: 10px/1 black "arial";
+  text-align: left;
+  margin-top: 50px;
+  padding: 3px;
+}
+#submsg .inner .wrap article .pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#submsg .inner .wrap article img {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
