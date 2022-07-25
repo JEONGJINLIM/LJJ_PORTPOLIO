@@ -243,7 +243,7 @@ a {
 }
 #visual .inner img {
   width: 100%;
-  height: 85vh;
+  height: 55vh;
   object-fit: cover;
 }
 #visual .inner .treetop {
@@ -594,6 +594,7 @@ a {
 
 #footer {
   width: 100%;
+  padding-top: 30px;
   background: #efefef;
 }
 #footer .inner {
@@ -610,46 +611,90 @@ a {
   display: block;
   clear: both;
 }
-#footer .inner .wrap article {
-  width: 580px;
-  height: 150px;
-  background: #efefef;
-  position: relative;
-}
-#footer .inner .wrap article .footerL {
-  width: 100%;
+#footer .inner .wrap .footerL {
+  width: 380px;
   height: 100%;
   padding: 10px;
 }
-#footer .inner .wrap article li {
+#footer .inner .wrap .footerL li {
   width: 100%;
   height: 100%;
   display: block;
   font: 30px/1 "Play";
   padding-left: 10px;
 }
-#footer .inner .wrap article a {
+#footer .inner .wrap .footerL a {
   display: block;
   font: 30px/1 black "Play";
   color: black;
-  padding-left: 10px;
 }
-#footer .inner .wrap article i {
+#footer .inner .wrap .footerL i {
+  width: 40px;
+  height: 40px;
   display: block;
-  padding: 20px;
-  font-size: xxx-large;
+  margin: 10px;
+  padding: 8px;
+  background: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: x-large;
   float: left;
 }
-#footer .inner .wrap article .footerR {
+#footer .inner .wrap .footerR {
+  width: 580px;
+  height: 100%;
+  padding-top: 10px;
+  float: right;
+}
+#footer .inner .wrap .footerR li {
+  font: bold 20px/1 "Play";
+  color: white;
   width: 100%;
   height: 100%;
-  border: 1px black "Play";
-  padding: 10px;
 }
-#footer .inner .wrap article .footerR li {
-  display: block;
-  float: right;
-  font: black 20px/1 "Play";
+#footer .inner .wrap .footerR li:nth-child(1) {
+  width: 60px;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+#footer .inner .wrap .footerR li:nth-child(2) {
+  width: 1px;
+  height: 100%;
+  padding-left: 20px;
+  float: left;
+  text-align: center;
+}
+#footer .inner .wrap .footerR li:nth-child(3) {
+  width: 240px;
+  height: 100%;
+  float: left;
+  padding-left: 15px;
+  text-align: center;
+}
+#footer .inner .wrap .footerR li:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  float: left;
+  padding-right: 20px;
+  text-align: center;
+}
+#footer .inner .wrap .footerR li:nth-child(5) {
+  width: 240px;
+  height: 100%;
+  float: left;
+  padding-left: 10px;
+}
+#footer h1 {
+  font: bold 20px/1 "Play";
+  color: #efefef;
+  width: 100%;
+  height: 60px;
+  font: 20px/1.5;
+  float: left;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #efefef;
 }
 
 /*# sourceMappingURL=style.css.map */
