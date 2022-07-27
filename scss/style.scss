@@ -2,27 +2,29 @@
 @import 'reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+@import "sub_layout.scss"; 
+
 $bgColor : #efefef;
 
 #header {
     width: 100%;
-    background: #efefef;
-    /*background: #efefef;*/
+    background:linear-gradient(to top,rgb(188, 224, 239),rgb(65, 179, 228)); 
+   
 
     .inner {
         width: 1180px;
         margin:0 auto;
-        border-left:1px solid black;
-        border-right:1px solid black;
         position: relative;
         overflow: hidden;
-        background: #efefef;
+        background:linear-gradient(to top,rgb(188, 224, 239),(#efefef));
+
+       
 
         .headerTop{
                 height: 50px;
-                background:linear-gradient(to right,rgb(188, 224, 239),rgb(65, 179, 228)); 
+                background:linear-gradient(to top,rgb(188, 224, 239),rgb(65, 179, 228)); 
                 
-                border-bottom: 3px solid rgb(138, 136, 136);
+                /*border-bottom: 3px solid rgb(138, 136, 136);*/
 
             .menutopleft {
                 height: 100%;
@@ -40,7 +42,7 @@ $bgColor : #efefef;
             }
             .cloudAni{
                 width: 1000px;
-                height: 100%;
+                height: 50px;
                 top:0; left:100px;
                 position: absolute;
                 animation:30s linear infinite;
@@ -158,6 +160,10 @@ $bgColor : #efefef;
             }
         }
         .headerBottom{
+            width:100%;
+            /*background:linear-gradient(to bottom,rgb(188, 224, 239),(#efefef));*/ 
+            background: black;
+            
             .leftmenu{
                 width:280px;
                 height:70px;
@@ -165,7 +171,6 @@ $bgColor : #efefef;
                 left:0;
                 padding:20px;
                 float:left;
-                background: #efefef;
                 
                 h1{
                     font: bold 30px/1 'Play';
@@ -642,7 +647,7 @@ $bgColor : #efefef;
 #footer{
         width: 100%;
         padding-top: 30px;
-        background: #efefef;
+        background:rgb(85, 35, 14);
         
         .inner{
             width: 1180px;

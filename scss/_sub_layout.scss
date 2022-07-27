@@ -1,0 +1,351 @@
+#header_sub {
+    width: 100%;
+    background:linear-gradient(to top,rgb(188, 224, 239),rgb(65, 179, 228)); 
+   
+
+    .inner {
+        width: 1180px;
+        margin:0 auto;
+        position: relative;
+        overflow: hidden;
+        background:linear-gradient(to top,rgb(188, 224, 239),(#efefef));
+
+       
+
+        .headerTop{
+                height: 50px;
+                background:linear-gradient(to top,rgb(188, 224, 239),rgb(65, 179, 228)); 
+                
+                /*border-bottom: 3px solid rgb(138, 136, 136);*/
+
+            .menutopleft {
+                height: 100%;
+                font-size: xxx-large;
+                float: left;                
+                color: black;
+                
+                i{  
+                    display: block;
+                    padding-left:7px;
+                    width: 100%;
+                    height: 100%;
+                }
+                        
+            }
+            .cloudAni{
+                width: 1000px;
+                height: 50px;
+                top:0; left:100px;
+                position: absolute;
+                animation:30s linear infinite;
+                
+                img{
+                    height: 32px;
+                    margin: 5px;
+                    padding: 3px;
+                    padding-top: 3px;
+                    object-fit: cover;
+                }
+
+                .cloud1{
+                    padding-top:5px;
+                    position:absolute; top:0px;left:10%;  /*요소 위치 지정*/
+                    animation:flow 30s linear infinite;
+                    transform:scaleX(-1)
+                }
+                .cloud2{
+                    position:absolute; top:0px; left:0%; 
+                    animation:flow 23s linear infinite;
+                    transform:scaleX(-1) 
+                }
+                .cloud3{
+                    position:absolute; top:1.5px;left:0%;  /*요소 위치 지정*/
+                    animation:flow 18s linear infinite;
+                    
+                }
+                .cloud4{
+                    position:absolute; top:1.5px; left:10%; 
+                    animation:flow 28s linear infinite;
+                    
+                }
+                .cloud5{
+                    position:absolute; top:0; left:10%; 
+                    animation:flow 10s linear infinite;
+                    
+                }
+                @keyframes flow{
+                    0%{ left:0%; opacity:0;  }
+                    10%{ opacity:1; }
+                    90%{ opacity:1; }
+                    100%{ left:90%; opacity:0;  }
+                }
+            }
+
+            .btnCall{
+                float:right; 
+                 
+                    position: relative;
+                    display:block;
+                    width:30px;
+                    height:25px;
+                    top: 10px;
+                    right:7px;
+                    float:right;
+
+    
+                    &::before{
+                        content:'';
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: #000;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transition: top 0.5s 0s, transform 0.5s 0.5s;
+                    }
+    
+                     &::after{ 
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 2px;
+                        background: #000;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+                        }
+    
+                    span{
+                        display:block;
+                        width: 100%; height:2px;
+                        background: #000;
+                        position: absolute;
+                        top:50%; 
+                        left:0; margin-top: -1px;
+                        text-indent: -9999px;
+                        transition: all 0.5s;
+                        }
+                       
+                        &.on{
+    
+                            &::before{ top:calc(50% - 1px);
+                                 /*원래 문법=> top:50% ,-1px*/
+                                 transform: rotate(45deg);
+                            }
+                            &::after{bottom:50%; margin-bottom:-1px;
+                                transform: rotate(-45deg);
+                             }
+                             span{
+                             transform:translateX(100%);
+                                 opacity: 0;
+                            
+                            }
+                        }
+                        
+                      
+            }
+
+            &::after{
+                content:''; display:block; clear:both; 
+            }
+        }
+        .headerBottom{
+            width:100%;
+            /*background:linear-gradient(to bottom,rgb(188, 224, 239),(#efefef));*/ 
+            background: black;
+            
+            .leftmenu{
+                width:280px;
+                height:70px;
+                top:0;
+                left:0;
+                padding:20px;
+                float:left;
+                
+                h1{
+                    font: bold 30px/1 'Play';
+                    color:rgb(215, 63, 63);
+                    float: left;
+                }
+                    
+                a{
+                    font: bold 30px/1 'Play';
+                    color:rgb(215, 63, 63);
+                    float:left;
+                    }
+            }
+
+            .midMenu{
+                width:520px;
+                height:70px;
+
+                text-align: center;
+                padding:10px;
+                padding-top:28px;
+                float: left;
+
+            li{ 
+                font: bold 15px/1 'play';
+                color:red;
+                float:left;
+                padding-right:20px;
+            }
+            a{
+                font: bold 15px/1 'play';
+                color:red;
+            }
+        }
+
+            .rightMenu{
+                width: 374px;
+                height: 70px;
+                padding-top:15px;
+                float: left;
+                
+                h2{ font:bold 25px/1 'play';
+                    color:rgb(215, 63, 63);
+                    float: left;
+                    padding-top:5px;
+                    padding-left: 5px;
+                }
+
+                .tray i{
+                    float: left;
+                    font-size:x-large;
+                    color:rgb(215, 63, 63);
+                    padding-left:15px;
+                    padding-top:5px;
+                    }
+            }
+        }
+    }
+ }
+
+
+
+
+ #footer_sub{
+    width: 100%;
+    padding-top: 30px;
+    background: #efefef;
+    
+    .inner{
+        width: 1180px;
+        margin: 0 auto;
+        background:rgb(85, 35, 14);
+        
+        
+        .wrap{
+            width:100%;
+            position: relative;
+        
+
+        
+        &::after{ //요것도 잘함
+            content:''; display: block; clear:both;
+
+        }
+
+        .footerL{
+            width: 380px;
+            height: 100%;
+            padding: 10px;
+            
+            li {
+                 width: 100%;
+                 height: 100%;
+                 display: block;
+                 font: 30px/1 'Play';
+                 padding-left: 10px;
+                }
+            
+             a {
+                 display: block;
+                 font: 30px/1 black 'Play';
+                 color: black;
+                
+                }
+                            
+            i { 
+                    width:40px;
+                    height:40px;
+                    display: block;
+                    margin: 10px;
+                    padding:8px;
+                    background:white;
+                    border-radius:50px;
+                    text-align: center;
+                    font-size: x-large;
+                    float: left;
+                    }
+                }
+        
+            .footerR{
+                    width:580px;
+                    height:100%;
+                    padding-top: 10px;
+                    float: right;
+
+                li{ 
+                    font: bold 20px/1 'Play';
+                    color: white;
+                    width: 100%;
+                    height: 100%;
+
+                    &:nth-child(1){
+                        width: 60px;
+                        height: 100%;
+                        float: left;
+                        text-align: center;
+                    }
+                    &:nth-child(2){
+                        width: 1px;
+                        height: 100%;
+                        padding-left: 20px;
+                        float: left;
+                        text-align: center;
+                    }
+
+                    &:nth-child(3){
+                        width: 240px;
+                        height: 100%;
+                        float: left;
+                        padding-left: 15px;
+                        text-align: center;
+                    }
+
+                    &:nth-child(4){
+                        width: 1px;
+                        height: 100%;
+                        float: left;
+                        padding-right:20px;
+                        text-align: center;
+                    }
+
+                    &:nth-child(5){
+                        width: 240px;
+                        height: 100%;
+                        float: left;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+}
+                h1{ 
+                    font: bold 20px/1 'Play';
+                    color: #efefef;
+                    width: 100%;
+                    height: 60px;
+                    font: 20px/1.5;
+                    float: left;
+                    text-align: center;
+                    padding: 20px;
+                    border-top: 3px solid #efefef;
+                    }
+
+            
+            }
