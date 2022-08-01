@@ -1,7 +1,7 @@
 @charset "UTF-8"; 
 @import 'reset.scss';
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-
+@import "youtube.scss";
 @import "sub_layout.scss"; 
 
 $bgColor : #efefef;
@@ -626,6 +626,7 @@ $bgColor : #efefef;
                         text-align: left;
                         margin-top: 50px;
                         padding:3px;
+                        padding-bottom: 30px;
                     }
 
 

@@ -232,6 +232,414 @@ a {
   padding-top: 5px;
 }
 
+#youtube .inner {
+  width: 1180px;
+  margin: 0 auto;
+  background: #efefef;
+}
+#youtube .inner .wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 15px;
+  background: #EEF3F8;
+}
+#youtube .inner .wrap article {
+  width: 48%;
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 2px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#youtube .inner .wrap article:nth-child(1) {
+  background: #2e8deb;
+}
+#youtube .inner .wrap article:nth-child(2) {
+  background: #FFF076;
+}
+#youtube .inner .wrap article:nth-child(3) {
+  background: #F1CDBA;
+}
+#youtube .inner .wrap article:nth-child(4) {
+  background: #FFD97F;
+}
+#youtube .inner .wrap article .pic {
+  width: 105%;
+  height: 100%;
+  object-fit: contain;
+}
+#youtube .inner .wrap article .pic img {
+  width: 95%;
+  height: 100%;
+  object-fit: cover;
+}
+#youtube .inner .wrap article .con {
+  width: 500px;
+  height: 100%;
+  text-align: left;
+  font: #171A26 "play";
+}
+#youtube .inner .wrap article .con h2 {
+  font: bold 17px/1.2 "play";
+  padding-bottom: 20px;
+}
+#youtube .inner .wrap article .con p {
+  font: bold 10px/1.35 "play";
+  padding-bottom: 30px;
+}
+#youtube .inner .wrap article .con span {
+  font: bold 12.5px/1.5 "play";
+}
+
+aside {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 5vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+aside iframe {
+  width: 100%;
+  height: 100%;
+}
+aside .close {
+  font: 16px/1 "arial";
+  color: orange;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+
+#footer_sub {
+  width: 100%;
+  padding-top: 30px;
+  background: #efefef;
+}
+#footer_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  background: rgb(85, 35, 14);
+}
+#footer_sub .inner .wrap {
+  width: 100%;
+  position: relative;
+}
+#footer_sub .inner .wrap::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer_sub .inner .wrap .footerL {
+  width: 380px;
+  height: 100%;
+  padding: 10px;
+}
+#footer_sub .inner .wrap .footerL li {
+  width: 100%;
+  height: 100%;
+  display: block;
+  font: 30px/1 "Play";
+  padding-left: 10px;
+}
+#footer_sub .inner .wrap .footerL a {
+  display: block;
+  font: 30px/1 black "Play";
+  color: black;
+}
+#footer_sub .inner .wrap .footerL i {
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: 10px;
+  padding: 8px;
+  background: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: x-large;
+  float: left;
+}
+#footer_sub .inner .wrap .footerR {
+  width: 580px;
+  height: 100%;
+  padding-top: 10px;
+  float: right;
+}
+#footer_sub .inner .wrap .footerR li {
+  font: bold 20px/1 "Play";
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+#footer_sub .inner .wrap .footerR li:nth-child(1) {
+  width: 60px;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+#footer_sub .inner .wrap .footerR li:nth-child(2) {
+  width: 1px;
+  height: 100%;
+  padding-left: 20px;
+  float: left;
+  text-align: center;
+}
+#footer_sub .inner .wrap .footerR li:nth-child(3) {
+  width: 240px;
+  height: 100%;
+  float: left;
+  padding-left: 15px;
+  text-align: center;
+}
+#footer_sub .inner .wrap .footerR li:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  float: left;
+  padding-right: 20px;
+  text-align: center;
+}
+#footer_sub .inner .wrap .footerR li:nth-child(5) {
+  width: 240px;
+  height: 100%;
+  float: left;
+  padding-left: 10px;
+}
+#footer_sub h1 {
+  font: bold 20px/1 "Play";
+  color: #efefef;
+  width: 100%;
+  height: 60px;
+  font: 20px/1.5;
+  float: left;
+  text-align: center;
+  padding: 20px;
+  border-top: 3px solid #efefef;
+}
+
+#header_sub {
+  width: 100%;
+  background: linear-gradient(to top, rgb(188, 224, 239), rgb(65, 179, 228));
+}
+#header_sub .inner {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top, rgb(188, 224, 239), #efefef);
+}
+#header_sub .inner .headerTop {
+  height: 50px;
+  background: linear-gradient(to top, rgb(188, 224, 239), rgb(65, 179, 228));
+  /*border-bottom: 3px solid rgb(138, 136, 136);*/
+}
+#header_sub .inner .headerTop .menutopleft {
+  height: 100%;
+  font-size: xxx-large;
+  float: left;
+  color: black;
+}
+#header_sub .inner .headerTop .menutopleft i {
+  display: block;
+  padding-left: 7px;
+  width: 100%;
+  height: 100%;
+}
+#header_sub .inner .headerTop .cloudAni {
+  width: 1000px;
+  height: 50px;
+  top: 0;
+  left: 100px;
+  position: absolute;
+  animation: 30s linear infinite;
+}
+#header_sub .inner .headerTop .cloudAni img {
+  height: 32px;
+  margin: 5px;
+  padding: 3px;
+  padding-top: 3px;
+  object-fit: cover;
+}
+#header_sub .inner .headerTop .cloudAni .cloud1 {
+  padding-top: 5px;
+  position: absolute;
+  top: 0px;
+  left: 10%; /*요소 위치 지정*/
+  animation: flow 30s linear infinite;
+  transform: scaleX(-1);
+}
+#header_sub .inner .headerTop .cloudAni .cloud2 {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  animation: flow 23s linear infinite;
+  transform: scaleX(-1);
+}
+#header_sub .inner .headerTop .cloudAni .cloud3 {
+  position: absolute;
+  top: 1.5px;
+  left: 0%; /*요소 위치 지정*/
+  animation: flow 18s linear infinite;
+}
+#header_sub .inner .headerTop .cloudAni .cloud4 {
+  position: absolute;
+  top: 1.5px;
+  left: 10%;
+  animation: flow 28s linear infinite;
+}
+#header_sub .inner .headerTop .cloudAni .cloud5 {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  animation: flow 10s linear infinite;
+}
+@keyframes flow {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    opacity: 0;
+  }
+}
+#header_sub .inner .headerTop .btnCall {
+  float: right;
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 25px;
+  top: 10px;
+  right: 7px;
+  float: right;
+}
+#header_sub .inner .headerTop .btnCall::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .inner .headerTop .btnCall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: bottom 0.5s 0s, transform 0.5s 0.5s;
+}
+#header_sub .inner .headerTop .btnCall span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -1px;
+  text-indent: -9999px;
+  transition: all 0.5s;
+}
+#header_sub .inner .headerTop .btnCall.on::before {
+  top: calc(50% - 1px);
+  /*원래 문법=> top:50% ,-1px*/
+  transform: rotate(45deg);
+}
+#header_sub .inner .headerTop .btnCall.on::after {
+  bottom: 50%;
+  margin-bottom: -1px;
+  transform: rotate(-45deg);
+}
+#header_sub .inner .headerTop .btnCall.on span {
+  transform: translateX(100%);
+  opacity: 0;
+}
+#header_sub .inner .headerTop::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#header_sub .inner .headerBottom {
+  width: 100%;
+  /*background:linear-gradient(to bottom,rgb(188, 224, 239),(#efefef));*/
+  background: black;
+}
+#header_sub .inner .headerBottom .leftmenu {
+  width: 280px;
+  height: 70px;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  float: left;
+}
+#header_sub .inner .headerBottom .leftmenu h1 {
+  font: bold 30px/1 "Play";
+  color: rgb(215, 63, 63);
+  float: left;
+}
+#header_sub .inner .headerBottom .leftmenu a {
+  font: bold 30px/1 "Play";
+  color: rgb(215, 63, 63);
+  float: left;
+}
+#header_sub .inner .headerBottom .midMenu {
+  width: 520px;
+  height: 70px;
+  text-align: center;
+  padding: 10px;
+  padding-top: 28px;
+  float: left;
+}
+#header_sub .inner .headerBottom .midMenu li {
+  font: bold 15px/1 "play";
+  color: red;
+  float: left;
+  padding-right: 20px;
+}
+#header_sub .inner .headerBottom .midMenu a {
+  font: bold 15px/1 "play";
+  color: red;
+}
+#header_sub .inner .headerBottom .rightMenu {
+  width: 374px;
+  height: 70px;
+  padding-top: 15px;
+  float: left;
+}
+#header_sub .inner .headerBottom .rightMenu h2 {
+  font: bold 25px/1 "play";
+  color: rgb(215, 63, 63);
+  float: left;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+#header_sub .inner .headerBottom .rightMenu .tray i {
+  float: left;
+  font-size: x-large;
+  color: rgb(215, 63, 63);
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
 #footer_sub {
   width: 100%;
   padding-top: 30px;
@@ -902,6 +1310,7 @@ a {
   text-align: left;
   margin-top: 50px;
   padding: 3px;
+  padding-bottom: 30px;
 }
 #submsg .inner .wrap article .pic {
   width: 100%;

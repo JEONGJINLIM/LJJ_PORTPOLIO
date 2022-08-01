@@ -221,82 +221,113 @@
             }
         }
     }
- }
+}
 #youtube{
+    
+
     .inner{width: 1180px;
             margin: 0 auto;
+            background: #efefef;
 
-            main{
+            .wrap{
                 width: 100%;
-                height: 300px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-content: center;
-                padding: 100px 5vw;
-            }
-            
-            article{
-                width: 48%; height: 300px;
-                border: 1px solid #999;
-                display: flex;
-                justify-content: space-between;
-                padding: 10px;
-                margin-bottom: 50px;
-            
-                .pic{
-                    width: 48%;
-                    height: 300px;
-            
-                    img{
-                        width: 100%;
+                padding:15px;
+                background:#EEF3F8;
+
+                article{
+                    width:48%;
+                    height: 280px;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 10px;
+                    padding:2px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+
+                    &:nth-child(1){
+                        background: #2e8deb;
+                
                     }
-                }
+
+                    &:nth-child(2){
+                        background:#FFF076;
+
+                    }
+                    
+                    &:nth-child(3){
+                       background: #F1CDBA ;
+
+                    }
+                    
+                    &:nth-child(4){
+                        background:#FFD97F;
+                    }
+
+                    .pic{
+                        width:105%;
+                        height: 100%;
+                        object-fit: contain;
+                        
+
+                        img{
+                            width: 95%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
                 .con{
-                    width: 48%;
+                    width:500px;
                     height: 100%;
-            
+                    text-align: left;
+                    font: #171A26 'play';
+
+
                     h2{
-                        font: bold 16px/1.2 'arial';
-                        color: rgb(21, 21, 195);
-            
+                        font: bold 17px/1.2 "play";
+                        padding-bottom: 20px;
+                        
                     }
-                    p{  padding-top: 10px;
-                        font: 15px/1 'arial';
-                        /*display:-webkit-box;*/
-                        /*-webkit-line-clamp:3;*/
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
+                    p{
+                        font: bold 10px/1.35 "play";
+                        padding-bottom: 30px;
+                        
+                    }
+                    span{
+                        font: bold 12.5px/1.5 "play";
                     }
                 }
-            }
-            
-            aside {
-                width: 100%;
-                height: 100%;
-                background: rgba(0,0,0,0.9);
-                padding: 5px;
-                position: fixed;
-                top:0; left:0;
-            
-                iframe{
-                    width: 100%; height: 100%;
-                }
-                .close{
-                    font: 16px/1 'arial';
-                    color: orange;
-                    position: absolute;
-                    top: 40px;
-                    right:40px;
-                    cursor: pointer;
-                }
-            }
 
+            }
+            
+        }    
     }
-    
- 
-
 }
+aside{
+    width:100%; 
+    height:100%; 
+    background:rgba(0,0,0,0.9); 
+    padding:5vw; 
+    position:fixed; 
+    top:0; left:0; 
+
+    iframe{
+        width:100%; height:100%; 
+    }
+    .close{
+        font:16px/1 'arial'; 
+        color:orange; 
+        position:absolute; 
+        top:40px; 
+        right:40px; 
+        cursor: pointer;
+    }
+}
+
+
  #footer_sub{
     width: 100%;
     padding-top: 30px;
